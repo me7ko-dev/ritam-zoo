@@ -103,3 +103,6 @@ h2 { margin: 10px 0 4px; font-size: 34px; font-weight: 900; color: var(--pink); 
 }
 .row button + button { background: var(--sun); color: var(--ink); box-shadow: 0 5px 0 #e0a300; }
 .row button:active { transform: translateY(3px); box-shadow: none; }
+.song .top { display: flex; justify-content: space-between; align-items: flex-start; }
+.lv { font-size: 12px; font-weight: 900; padding: 3px 9px; border-radius: 10px; background: rgba(255, 255, 255, .7); }
+.lv0 { color: #1f9d5c; } .lv1 { color: #c77d00; } .lv2 { color: #e0445f; }

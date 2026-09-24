@@ -22,11 +22,53 @@ const SONGS = [
             E4 E4 F4 G4 G4 F4 E4 D4 C4 C4 D4 E4 D4:1.5 C4:.5 C4:2` },
   { id: 'birthday', title: 'Честит рожден ден', emoji: '🎂', color: '#ffc98a', bpm: 100, bar: 3, pickup: 1, key: 'C',
     notes: `G4:.5 G4:.5 A4 G4 C5 B4:2 G4:.5 G4:.5 A4 G4 D5 C5:2 G4:.5 G4:.5 G5 E5 C5 B4 A4:2
-            F5:.5 F5:.5 E5 C5 D5 C5:3` },
+            F5:.5 F5:.5 E5 C5 D5 C5:2` },
   { id: 'jingle', title: 'Звънчета', emoji: '❄️', color: '#a8f0e6', bpm: 116, bar: 4, key: 'C',
     notes: `E4 E4 E4:2 E4 E4 E4:2 E4 G4 C4:1.5 D4:.5 E4:4 F4 F4 F4:1.5 F4:.5 F4 E4 E4 E4:.5 E4:.5
             E4 D4 D4 E4 D4:2 G4:2 E4 E4 E4:2 E4 E4 E4:2 E4 G4 C4:1.5 D4:.5 E4:4
             F4 F4 F4:1.5 F4:.5 F4 E4 E4 E4:.5 E4:.5 G4 G4 F4 D4 C4:4` },
+
+  { id: 'bus', title: 'Колелата на автобуса', emoji: '🚌', color: '#ffe066', bpm: 112, bar: 4, pickup: 1, key: 'F',
+    notes: `C4 F4 F4:.5 F4:.5 F4 A4 C5 A4 F4:2 G4 E4 C4:2 C5 A4 F4 C4
+            F4 F4:.5 F4:.5 F4 A4 C5 A4 F4:2 G4:2 C4 C4 F4:4` },
+  { id: 'ducks', title: 'Моите патенца', emoji: '🦆', color: '#ffd9a0', bpm: 108, bar: 4, key: 'C',
+    notes: `C4 D4 E4 F4 G4:2 G4:2 A4 A4 A4 A4 G4:4 A4 A4 A4 A4 G4:4 F4 F4 F4 F4 E4:2 E4:2 D4 D4 D4 D4 C4:4` },
+  { id: 'buns', title: 'Топли кифлички', emoji: '🥐', color: '#f7c59f', bpm: 100, bar: 4, key: 'C',
+    notes: `E4 D4 C4:2 E4 D4 C4:2 C4:.5 C4:.5 C4:.5 C4:.5 D4:.5 D4:.5 D4:.5 D4:.5 E4 D4 C4:2
+            E4 D4 C4:2 E4 D4 C4:2 C4:.5 C4:.5 C4:.5 C4:.5 D4:.5 D4:.5 D4:.5 D4:.5 E4 D4 C4:2` },
+  { id: 'rain', title: 'Дъжде, дъжде, върви си', emoji: '🌧️', color: '#b5d8f7', bpm: 100, bar: 4, key: 'C',
+    notes: `G4 E4 G4:.5 G4:.5 E4 G4:.5 G4:.5 E4:.5 A4:.5 G4:.5 G4:.5 E4
+            G4:.5 G4:.5 E4:.5 A4:.5 G4:.5 G4:.5 E4 G4 E4 G4:.5 G4:.5 E4
+            G4 E4 G4:.5 G4:.5 E4 G4:.5 G4:.5 E4:.5 A4:.5 G4:.5 G4:.5 E4
+            G4:.5 G4:.5 E4:.5 A4:.5 G4:.5 G4:.5 E4 G4 E4 G4:.5 G4:.5 E4:4` },
+  { id: 'spider', title: 'Малкото паяче', emoji: '🕷️', color: '#d4c1ff', bpm: 170, bar: 6, pickup: 1, key: 'C',
+    notes: `G3 C4:2 C4 C4:2 D4 E4:3 E4:2 E4 D4:2 C4 D4:2 E4 C4:6
+            E4:3 E4:2 F4 G4:5 G4 F4:2 E4 F4:2 G4 E4:6
+            C4:3 C4:2 D4 E4:5 E4 D4:2 C4 D4:2 E4 C4:4 G3 G3
+            C4:2 C4 C4:2 D4 E4:3 E4:2 E4 D4:2 C4 D4:2 E4 C4:6` },
+  { id: 'row', title: 'Греби, греби, лодчице', emoji: '🚣', color: '#8fd3ff', bpm: 180, bar: 6, key: 'C',
+    notes: `C4:3 C4:3 C4:2 D4 E4:3 E4:2 D4 E4:2 F4 G4:6
+            C5 C5 C5 G4 G4 G4 E4 E4 E4 C4 C4 C4 G4:2 F4 E4:2 D4 C4:6` },
+  { id: 'hans', title: 'Малкото Хансче', emoji: '🎒', color: '#ffc4e1', bpm: 108, bar: 4, key: 'C',
+    notes: `G4 E4 E4:2 F4 D4 D4:2 C4 D4 E4 F4 G4 G4 G4:2 G4 E4 E4:2 F4 D4 D4:2 C4 E4 G4 G4 C4:4
+            D4 D4 D4 D4 D4 E4 F4:2 E4 E4 E4 E4 E4 F4 G4:2 G4 E4 E4:2 F4 D4 D4:2 C4 E4 G4 G4 C4:4` },
+  { id: 'oldman', title: 'Дядо свири нък-нак', emoji: '👴', color: '#c8e6a0', bpm: 112, bar: 4, key: 'C',
+    notes: `G4 E4 G4:2 G4 E4 G4:2 A4:.5 G4:.5 F4:.5 E4:.5 D4:.5 E4:.5 F4
+            E4:.5 F4:.5 G4 C4 C4:.5 C4:.5 C4:.5 D4:.5 E4:.5 F4:.5 G4:2 G4 D4 D4 F4 E4:.5 D4:.5 C4:3` },
+  { id: 'london', title: 'Лондонският мост', emoji: '🌉', color: '#ffb199', bpm: 108, bar: 4, key: 'C',
+    notes: `G4:1.5 A4:.5 G4 F4 E4 F4 G4:2 D4 E4 F4:2 E4 F4 G4:2
+            G4:1.5 A4:.5 G4 F4 E4 F4 G4:2 D4:2 G4:2 E4 C4:3` },
+  { id: 'moon', title: 'На лунна светлина', emoji: '🌙', color: '#c3c8ff', bpm: 100, bar: 4, key: 'C',
+    notes: `C4 C4 C4 D4 E4:2 D4:2 C4 E4 D4 D4 C4:4 C4 C4 C4 D4 E4:2 D4:2 C4 E4 D4 D4 C4:4
+            D4 D4 D4 D4 A3:2 A3:2 D4 C4 B3 A3 G3:4 C4 C4 C4 D4 E4:2 D4:2 C4 E4 D4 D4 C4:4` },
+  { id: 'yankee', title: 'Янки Дудъл', emoji: '🎩', color: '#ff9fb2', bpm: 92, bar: 4, key: 'C',
+    notes: `C4:.5 C4:.5 D4:.5 E4:.5 C4:.5 E4:.5 D4:.5 G3:.5 C4:.5 C4:.5 D4:.5 E4:.5 C4 B3
+            C4:.5 C4:.5 D4:.5 E4:.5 F4:.5 E4:.5 D4:.5 C4:.5 B3:.5 G3:.5 A3:.5 B3:.5 C4 C4
+            C4:.5 C4:.5 D4:.5 E4:.5 C4:.5 E4:.5 D4:.5 G3:.5 C4:.5 C4:.5 D4:.5 E4:.5 C4 B3
+            C4:.5 C4:.5 D4:.5 E4:.5 F4:.5 E4:.5 D4:.5 C4:.5 B3:.5 G3:.5 A3:.5 B3:.5 C4:2` },
+  { id: 'lullaby', title: 'Приспивна песен', emoji: '💤', color: '#e2d4ff', bpm: 84, bar: 3, pickup: 1, key: 'C',
+    notes: `E4:.5 E4:.5 G4:2 E4:.5 E4:.5 G4:2 E4:.5 G4:.5 C5 B4:1.5 A4:.5 A4 G4 D4:.5 E4:.5
+            F4 D4 D4:.5 E4:.5 F4:2 D4:.5 F4:.5 B4:.5 A4:.5 G4 B4 C5:3` },
 ];
 const FREE_SONG = { id: 'free', free: true, title: 'Свири свободно', color: '#ffe3f1', bpm: 100, bar: 4 };
 
@@ -151,13 +193,28 @@ function parseSong(song) {
     if (name !== '-') notes.push({ t, dur, midi: toMidi(name), lane: 0, hit: false, missed: false });
     t += dur;
   }
-  // По-ниските ноти отиват вляво, по-високите вдясно.
+  // По-ниските ноти отиват вляво, по-високите вдясно. При повече от 4 различни ноти
+  // пробваме всички начини да ги разделим на 4 последователни групи и взимаме най-равномерния,
+  // за да има работа за всяко животинче.
   const uniq = [...new Set(notes.map(n => n.midi))].sort((a, b) => a - b);
-  for (const n of notes) {
-    const r = uniq.indexOf(n.midi);
-    n.lane = uniq.length <= 4 ? Math.round(r * 3 / Math.max(1, uniq.length - 1)) : Math.floor(r * 4 / uniq.length);
+  const laneOf = new Map();
+  if (uniq.length <= 4) uniq.forEach((m, r) => laneOf.set(m, Math.round(r * 3 / Math.max(1, uniq.length - 1))));
+  else {
+    const cnt = uniq.map(m => notes.filter(n => n.midi === m).length), u = uniq.length;
+    const sum = (i, j) => cnt.slice(i, j).reduce((x, y) => x + y, 0);
+    let best = null, bestScore = Infinity;
+    for (let a = 1; a < u - 2; a++) for (let b = a + 1; b < u - 1; b++) for (let d = b + 1; d < u; d++) {
+      const g = [sum(0, a), sum(a, b), sum(b, d), sum(d, u)];
+      const score = g.reduce((x, y) => x + y * y, 0);
+      if (score < bestScore) { bestScore = score; best = [a, b, d]; }
+    }
+    uniq.forEach((m, r) => laneOf.set(m, best.filter(cut => r >= cut).length));
   }
-  return { notes, length: t };
+  for (const n of notes) n.lane = laneOf.get(n.midi);
+  const gaps = notes.slice(1).map((n, i) => n.t - notes[i].t);
+  const minGap = Math.min(...gaps) * 60 / song.bpm, nps = notes.length / (t * 60 / song.bpm);
+  const level = minGap >= 0.5 ? 0 : minGap >= 0.3 && nps < 1.8 ? 1 : 2;
+  return { notes, length: t, level };
 }
 
 // Съпровод: за всеки такт избира I, IV или V акорд според нотите в него + бас и барабан.
@@ -179,14 +236,16 @@ function buildEvents(song, notes, length) {
     }
     if (b === bars - 1) best = 0;
     const pcs = TRIADS[best].map(x => (x + k) % 12);
-    ev.push({ beat: s, type: 'bass', m: 48 + pcs[0], d: bar === 4 ? 2 : bar });
-    if (bar === 4) ev.push({ beat: s + 2, type: 'bass', m: 48 + pcs[2], d: 2 });
+    const half = bar === 4 ? 2 : bar === 6 ? 3 : 0;
+    ev.push({ beat: s, type: 'bass', m: 48 + pcs[0], d: half || bar });
+    if (half) ev.push({ beat: s + half, type: 'bass', m: 48 + pcs[2], d: half });
     ev.push({ beat: s, type: 'pad', ms: pcs.map(pc => (60 + pc > 67 ? 48 + pc : 60 + pc)), d: bar });
   }
   for (let i = 0; i < Math.ceil(length); i++) {
     const pos = (((i - pu) % bar) + bar) % bar;
     if (pos === 0) ev.push({ beat: i, type: 'kick', v: 0.45 });
-    else if (bar === 4 && pos === 2) ev.push({ beat: i, type: 'kick', v: 0.28 });
+    else if ((bar === 4 && pos === 2) || (bar === 6 && pos === 3)) ev.push({ beat: i, type: 'kick', v: 0.28 });
+    if (bar === 6) { if (pos % 3 === 0) ev.push({ beat: i, type: 'tick', v: 0.05 }); continue; }   // 6/8 се брои на 2
     ev.push({ beat: i, type: 'tick', v: 0.05 });
     ev.push({ beat: i + 0.5, type: 'tick', v: 0.025 });
   }
@@ -341,10 +400,12 @@ function startSong(song) {
   const travelB = (mode === 'wait' ? 2.6 : 2.2) / spb;
   let beat = free ? 0 : -travelB - 0.3;
   if (!free && mode === 'flow') {
-    const n = song.bar, labels = n === 4 ? ['3', '2', '1', 'Давай!'] : ['2', '1', 'Давай!'];
-    for (let i = 0; i < n; i++) events.push({ beat: -n + i, type: 'count', label: labels[i], hi: i === 0 });
+    const pulse = song.bar === 6 ? 3 : 1, n = song.bar === 6 ? 4 : song.bar;
+    for (let i = 0; i < n; i++) {
+      events.push({ beat: (i - n) * pulse, type: 'count', label: i === n - 1 ? 'Давай!' : String(n - 1 - i), hi: i === 0 });
+    }
     events.sort((a, b) => a.beat - b.beat);
-    beat = Math.min(beat, -n - 0.5);
+    beat = Math.min(beat, -n * pulse - 0.5);
   }
   G = {
     song, free, mode, notes, length, events, evIdx: 0, beat, spb, travelB,
@@ -603,13 +664,17 @@ function drawPals(t) {
   });
 }
 
+const LEVELS = ['лесна', 'средна', 'трудна'];
+for (const s of SONGS) s.level = parseSong(s).level;
+const SORTED = [...SONGS].sort((a, b) => a.level - b.level);
 function renderSongs() {
   const best = store.get('stars', {});
   songsEl.innerHTML = '';
-  for (const s of SONGS) {
+  for (const s of SORTED) {
     const b = document.createElement('button'); b.className = 'song'; b.style.setProperty('--c', s.color);
     const n = best[s.id + ':' + mode] || 0;
-    b.innerHTML = `<span class="e">${s.emoji}</span><b>${s.title}</b><span class="st">${'<i>★</i>'.repeat(n)}${'★'.repeat(3 - n)}</span>`;
+    b.innerHTML = `<span class="top"><span class="e">${s.emoji}</span><span class="lv lv${s.level}">${LEVELS[s.level]}</span></span>` +
+      `<b>${s.title}</b><span class="st">${'<i>★</i>'.repeat(n)}${'★'.repeat(3 - n)}</span>`;
     b.onclick = () => startSong(s);
     songsEl.append(b);
   }
