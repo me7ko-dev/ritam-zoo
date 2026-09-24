@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ритъм Зоо">
+<meta name="theme-color" content="#bfe6ff">
+<title>Ритъм Зоо</title>
+<meta name="description" content="Детско ритъм пиано: нотките падат, докосваш животинчето и то изпява песничката.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐻</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div id="hud" hidden>
+  <button id="back" aria-label="Към песните">✕</button>
+  <div id="hudMid"><div id="songName"></div><div id="prog"><i></i></div></div>
+  <div id="score"></div>
+</div>
+<div id="count" aria-live="polite"></div>
+
+<section id="home">
+  <header>
+    <div id="pals"></div>
+    <h1>Ритъм <span>Зоо</span></h1>
+    <p>Докосни животинчето, когато нотката стигне до кръгчето!</p>
+  </header>
+  <div id="modes" role="radiogroup" aria-label="Режим">
+    <button data-mode="wait" role="radio">🐢 Спокойно</button>
+    <button data-mode="flow" role="radio">🐇 В ритъм</button>
+  </div>
+  <div id="songs"></div>
+  <footer>🔊 Усили звука · На iPhone изключи безшумния режим</footer>
+</section>
+
+<section id="done" hidden>
+  <div class="card">
+    <div id="stars"><span>★</span><span>★</span><span>★</span></div>
+    <h2 id="doneMsg">Браво!</h2>
+    <p id="doneSub"></p>
+    <div class="row"><button id="again">↻ Пак</button><button id="toHome">🎵 Песни</button></div>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
